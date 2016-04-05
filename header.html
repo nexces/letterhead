@@ -1,4 +1,7 @@
 <style type="text/css">
+  * {
+    font-family: sans-serif;
+  }
   body {
     background-color: #31363B !important;
     margin: 0px auto;
@@ -159,7 +162,7 @@ tr.encrB {
       <tr>
         <td class="fieldname">{{ header.fromi18n }}</td>
         <td>
-              {{ header.from|safe }}  
+              {{ header.from|safe }}
 
               {% if header.resentfrom %}
                 &nbsp; {{ header.resentfromi18n }}: {{ header.resentfrom|safe }}
@@ -201,7 +204,7 @@ tr.encrB {
       </tr>
     {% endif %}
     {% if header.spamHTML %}
-        <tr> 
+        <tr>
           <td class="fieldname">{{ header.spamstatusi18n }}</td>
           <td>{{ header.spamHTML|safe }}</td>
         </tr>
